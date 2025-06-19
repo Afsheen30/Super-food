@@ -1,0 +1,35 @@
+.top_cat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px;
+}
+
+.top_cat_pro {
+  flex: 0 0 250px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.top_cat_pro img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item_info {
+  padding: 10px;
+}
+
+.fa-star {
+  color: lightgray;
+}
+
+.fa-star.checked {
+  color: orange;
+}

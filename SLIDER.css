@@ -1,0 +1,29 @@
+#outerbox {
+  width: 1270px;
+  height: 650px;
+  overflow: hidden;
+  margin: auto;
+}
+
+#sliderbox {
+  position: relative;
+  width: 5120px; /* 4 images x 1280px */
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+#sliderbox img {
+  float: left;
+  width: 1280px;
+  height: 650px;
+  border-radius: 10px;
+}
+
+@keyframes slide {
+  0%, 20% { left: 0px; }
+  25%, 45% { left: -1280px; }
+  50%, 70% { left: -2560px; }
+  75%, 95% { left: -3840px; }
+  100% { left: 0px; }
+}

@@ -1,0 +1,88 @@
+/* vegthali.css */
+.top_cat {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 30px;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.top_cat_pro {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+}
+
+.top_cat_pro img {
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.top_cat_pro h2 { /* Targeting h2 for item title */
+  margin: 10px 0 5px 0; /* Adjusted margins for spacing */
+  font-size: 22px; /* Increased font size for main title */
+  color: #333;
+}
+
+.top_cat_pro h3 { /* Targeting h3 for price */
+  margin: 5px 0 10px 0; /* Adjusted margins for spacing */
+  font-size: 18px;
+  color: #555;
+}
+
+.stars {
+    margin-bottom: 10px; /* Space below stars */
+}
+
+.stars .fa {
+  color: lightgray;
+}
+
+.stars .checked {
+  color: orange;
+}
+
+/* New CSS rule to remove underline from the link wrapping the button */
+.order-button-link {
+    text-decoration: none; /* This is the key to remove the underline */
+    display: inline-block; /* Allows margins/padding to be applied if needed */
+    margin-top: 10px; /* Moves the button down a bit from stars/price */
+}
+
+.order-btn {
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin-top: 10px; -- Removed from here, moved to .order-button-link */
+  transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: darkorange;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .top_cat {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    gap: 20px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .top_cat {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+    gap: 15px;
+    padding: 20px;
+  }
+}
+```
